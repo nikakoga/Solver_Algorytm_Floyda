@@ -62,7 +62,7 @@ int[,] Create_Array ()
 
     return FloydArray;
 }
-int[,] FoydAlgorithm (int [,]InputArray)//,int iteration)
+int[,] FoydAlgorithm (int [,]InputArray,int iteration)//,int iteration)
     {
 
     int[,] ResultArray = InputArray;
@@ -70,11 +70,12 @@ int[,] FoydAlgorithm (int [,]InputArray)//,int iteration)
     //{
     //    return ResultArray;
     //}
-    for (int i = 0; i < InputArray.GetLength(0); i++)
+    int row = iteration;
+    for (int col = 0; col < InputArray.GetLength(0); col++)
     {
-        for (int j = 0; j < InputArray.GetLength(1); j++)
+        if(col!=row)
         {
-            
+
         }
         
     }
