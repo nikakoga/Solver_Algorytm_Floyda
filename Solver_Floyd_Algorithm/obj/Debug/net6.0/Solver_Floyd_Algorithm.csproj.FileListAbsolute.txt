@@ -1,0 +1,15 @@
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\obj\Debug\net6.0\Solver_Floyd_Algorithm.csproj.AssemblyReference.cache
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\obj\Debug\net6.0\Solver_Floyd_Algorithm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\obj\Debug\net6.0\Solver_Floyd_Algorithm.AssemblyInfoInputs.cache
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\obj\Debug\net6.0\Solver_Floyd_Algorithm.AssemblyInfo.cs
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\obj\Debug\net6.0\Solver_Floyd_Algorithm.csproj.CoreCompileInputs.cache
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\bin\Debug\net6.0\Solver_Floyd_Algorithm.exe
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\bin\Debug\net6.0\Solver_Floyd_Algorithm.deps.json
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\bin\Debug\net6.0\Solver_Floyd_Algorithm.runtimeconfig.json
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\bin\Debug\net6.0\Solver_Floyd_Algorithm.dll
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\bin\Debug\net6.0\Solver_Floyd_Algorithm.pdb
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\obj\Debug\net6.0\Solver_Floyd_Algorithm.dll
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\obj\Debug\net6.0\refint\Solver_Floyd_Algorithm.dll
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\obj\Debug\net6.0\Solver_Floyd_Algorithm.pdb
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\obj\Debug\net6.0\Solver_Floyd_Algorithm.genruntimeconfig.cache
+C:\Users\weron\Documents\Pani Informatyk\Bajery\Solver_Floyd_Algorithm\Solver_Floyd_Algorithm\obj\Debug\net6.0\ref\Solver_Floyd_Algorithm.dll
