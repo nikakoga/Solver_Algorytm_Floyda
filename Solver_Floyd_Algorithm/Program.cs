@@ -64,13 +64,6 @@ int[,] Create_Array ()
 }
 int[,] FloydAlgorithm (int [,]InputArray,int iteration, int IterationNum)//,int iteration)
     {
-
-    //int[,] ResultArray = InputArray;
-    //if (iteration<InputArray.GetLength(0))
-    //{
-    //    return ResultArray;
-    //}
-
         int row_it = iteration;
         int col_it = iteration;
 
@@ -93,26 +86,20 @@ int[,] FloydAlgorithm (int [,]InputArray,int iteration, int IterationNum)//,int 
    
     if (iteration < IterationNum)
     {
-
         InputArray = FloydAlgorithm(InputArray, iteration + 1, IterationNum);
         return InputArray;
-
     }
-    
-        return InputArray;
-    
-      
-       
+        return InputArray; 
 }
 
 
-//int [,] FloydArray = Create_Array();
-int[,] FloydArray = { {0,3,300,1,300 },{ 3,0,300,4,1},{2,300,0,7,300},{300,300,5,0,4 },{300,1,2,300,0} };
+int [,] FloydArray = Create_Array();
+//int[,] FloydArray = { {0,3,300,1,300 },{ 3,0,300,4,1},{2,300,0,7,300},{300,300,5,0,4 },{300,1,2,300,0} };
 Console.WriteLine("Macierz stworzona\n");
 PrintArray(FloydArray);
 Console.WriteLine("\nMacierz po algorytmie\n");
 var Result = FloydAlgorithm(FloydArray,0,FloydArray.GetLength(0)-1);
-//PrintArray(Result);
+PrintArray(Result);
 
 
 
