@@ -49,7 +49,7 @@ int[,] Create_Array ()
         {   
             if(col!=row)
             {
-                Console.WriteLine("Kolumna {0} wiersz {1}", col, row);
+                Console.WriteLine("Kolumna {0} wiersz {1}", col+1, row+1);
                 do
                 {
                     FloydArray[row, col] = SaveIntFromUser();
@@ -62,33 +62,56 @@ int[,] Create_Array ()
 
     return FloydArray;
 }
-int[,] FoydAlgorithm (int [,]InputArray,int iteration)//,int iteration)
+int[,] FloydAlgorithm (int [,]InputArray,int iteration, int IterationNum)//,int iteration)
     {
 
-    int[,] ResultArray = InputArray;
+    //int[,] ResultArray = InputArray;
     //if (iteration<InputArray.GetLength(0))
     //{
     //    return ResultArray;
     //}
-    int row = iteration;
-    for (int col = 0; col < InputArray.GetLength(0); col++)
+
+    if(iteration < (IterationNum-1)) 
     {
-        if(col!=row)
-        {
+       
+        return FloydAlgorithm(InputArray, iteration+1,IterationNum);
+        Console.WriteLine($"\n Iteracja: {iteration}");
+        PrintArray(InputArray);
 
-        }
-        
     }
+    else 
+    {
+        int row_it = iteration;
+        int col_it = iteration;
 
-    return ResultArray;
-
-
-    
+        for (int row = 0; row < InputArray.GetLength(0); row++)
+        {
+            for (int col = 0; col < InputArray.GetLength(1); col++)
+            {
+                if (col != col_it && row != row_it)
+                {
+                    if (InputArray[row, col] > (InputArray[row_it, col] + InputArray[row, col_it]))
+                    {
+                        InputArray[row, col] = InputArray[row_it, col] + InputArray[row, col_it];
+                    }
+                }
+            }
+        }
+        Console.WriteLine($"\n Iteracja: {iteration}");
+        PrintArray(InputArray);
+        Console.WriteLine("\n");
+        return InputArray;
+    } 
 }
 
 
-int [,] FloydArray = Create_Array();
+//int [,] FloydArray = Create_Array();
+int[,] FloydArray = { {0,3,300,1,300 },{ 3,0,300,4,1},{2,300,0,7,300},{300,300,5,0,4 },{300,1,2,300,0} };
+Console.WriteLine("Macierz stworzona\n");
 PrintArray(FloydArray);
+Console.WriteLine("\nMacierz po algorytmie\n");
+var Result = FloydAlgorithm(FloydArray,0,FloydArray.GetLength(0)-1);
+PrintArray(Result);
 
 
 
