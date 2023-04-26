@@ -71,16 +71,6 @@ int[,] FloydAlgorithm (int [,]InputArray,int iteration, int IterationNum)//,int 
     //    return ResultArray;
     //}
 
-    if(iteration < (IterationNum-1)) 
-    {
-       
-        return FloydAlgorithm(InputArray, iteration+1,IterationNum);
-        Console.WriteLine($"\n Iteracja: {iteration}");
-        PrintArray(InputArray);
-
-    }
-    else 
-    {
         int row_it = iteration;
         int col_it = iteration;
 
@@ -97,11 +87,22 @@ int[,] FloydAlgorithm (int [,]InputArray,int iteration, int IterationNum)//,int 
                 }
             }
         }
-        Console.WriteLine($"\n Iteracja: {iteration}");
+        Console.WriteLine($"\n Iteracja: {iteration+1}");
         PrintArray(InputArray);
         Console.WriteLine("\n");
+   
+    if (iteration < IterationNum)
+    {
+
+        InputArray = FloydAlgorithm(InputArray, iteration + 1, IterationNum);
         return InputArray;
-    } 
+
+    }
+    
+        return InputArray;
+    
+      
+       
 }
 
 
@@ -111,7 +112,7 @@ Console.WriteLine("Macierz stworzona\n");
 PrintArray(FloydArray);
 Console.WriteLine("\nMacierz po algorytmie\n");
 var Result = FloydAlgorithm(FloydArray,0,FloydArray.GetLength(0)-1);
-PrintArray(Result);
+//PrintArray(Result);
 
 
 
